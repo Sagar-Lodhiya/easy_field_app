@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "Easy Field">
+    ]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="login">Login</string>
+    <string name="welcome_msg">Welcome to Kirtiman.  Please enter your mobile number to continue.</string>
+    <string name="str_mobile_number">Mobile Number</string>
+    <string name="str_login">Login</string>
+    <string name="str_privacy_policy"> Privacy Policy</string>
+
+    <string name="app_version">v%s</string>
+
+    <!-- alert message -->
+
+    <string name="str_title_app_update_available">App Update Available</string>
+    <string name="str_msg_app_update">New version of app is available. Kindly update your app from Playstore.</string>
+    <string name="str_update_now">Update Now</string>
+    <string name="str_exit">Exit</string>
+
+    <string name="ok">YES</string>
+    <string name="cancel">NO</string>
+    <string name="alert_permission_required">Permission must be required.</string>
+    <string name="str_retry">Retry</string>
+    <string name="str_use_your_location">Use your location</string>
+    <string name="str_location_disclosure_subtitle_1">&appname; will use your location in background after you Punch-In successfully in the app. After Punch-Out successfully app will stop background location tracking.</string>
+    <string name="str_location_disclosure_title_2">&appname; collects location data to enable admin view live location and generate travelling report after Punch-In even when the app is closed or not in use.</string>
+    <string name="str_label_allow_permission">Allow Permission</string>
+    <string name="str_close">Close</string>
+    <string name="str_tour_details">Tour Details</string>
+    <string name="str_expense_detail">Expense Detail</string>
+    <string name="str_type_of_expense">Type of Expense</string>
+    <string name="str_expense_amount">Expense Amount</string>
+    <string name="str_type_of_currency">Type of Currency</string>
+    <string name="str_place_city">Place (City)</string>
+    <string name="str_place">Place</string>
+
+    <string name="str_vehicle_type">Vehicle Type</string>
+    <string name="str_user_type">User Type</string>
+    <string name="str_meter_reading">Meter Reading</string>
+    <string name="str_night_stay">Night Stay</string>
+    <string name="str_bike">Bike</string>
+    <string name="str_car">Car</string>
+    <string name="str_other">Other / Bus / Train</string>
+    <string name="str_sales">Sales</string>
+    <string name="str_office">Office</string>
+
+
+
+    <string name="str_take_photo">Take Photo</string>
+    <string name="str_choose_from_library">Choose Photo From Library</string>
+    <string name="str_cancel">Cancel</string>
+
+    <string name="str_add_meter_reading_photo">Add Meter Reading Photo</string>
+    <string name="str_add_ticket_photo">Add Ticket Photo</string>
+
+    <string name="alert_enter_place">Location information is not available. Please click on location icon in Place field.</string>
+
+    <string name="alert_select_type_of_vehicle">Please select type of vehicle</string>
+    <string name="alert_enter_meter_reading">Please enter meter reading</string>
+    <string name="alert_add_meter_reading_photo">Please add meter reading photo</string>
+
+    <string name="alert_select_party_name">Please select party name</string>
+    <string name="alert_enter_discussion_point">Please enter discussion point.</string>
+    <string name="alert_enter_time_duration">Please enter time duration.</string>
+    <string name="alert_enter_remarks">Please enter remark.</string>
+
+    <!--messages -->
+    <string name="alert_punch_out_first_to_logout">Please punch out first to logout</string>
+    <string name="alert_title_logout">Logout?</string>
+    <string name="alert_msg_logout">Are you sure you want to logout?</string>
+    <string name="alert_msg_notification">Are you sure you want to clear Notifications?</string>
+    <string name="alert_select_user">Please select user type.</string>
+    <string name="str_no">No</string>
+    <string name="str_yes">Yes</string>
+
+
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="network_failure">Network Failure</string>
+    <string name="conversion_error">Something went wrong</string>
+    <string name="alert_enter_mobile_number">Please enter mobile number</string>
+    <string name="home">Home</string>
+    <string name="menu">Menu</string>
+    <string name="expense">Expense</string>
+    <string name="profile">Profile</string>
+    <string name="attendance">Attendance</string>
+    <string name="punch_in">Punch In</string>
+    <string name="punch_out">Punch Out</string>
+    <string name="rs">Rs</string>
+    <string name="pending_expense">Pending Expense</string>
+    <string name="today_visit">Today Visit</string>
+    <string name="km">Km</string>
+    <string name="kilometer_travelled">KM Travelled</string>
+    <string name="working_days">Working Days</string>
+    <string name="days">Days</string>
+    <string name="notifications">Notifications</string>
+    <string name="clear_all">Clear All</string>
+    <string name="stats">Stats</string>
+    <string name="analytics">Analytics</string>
+    <string name="visit">Visit</string>
+    <string name="party">Party</string>
+    <string name="payment">Payment</string>
+    <string name="total_visit">Total Visit</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="term_amp_conditions"><![CDATA[Term & Conditions]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name</string>
+    <string name="claimed">Claimed</string>
+    <string name="fixed">Fixed</string>
+    <string name="type">Type</string>
+    <string name="date">Date</string>
+    <string name="apply">Apply</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="time">Time</string>
+    <string name="party_name">Party Name</string>
+    <string name="time_duration">Time Duration</string>
+    <string name="str_discussion_point">Discussion Point</string>
+    <string name="remark">Remarks</string>
+    <string name="amount">Amount</string>
+    <string name="amount_type">Amount Type</string>
+    <string name="amount_details">Amount Details</string>
+    <string name="collection_of">Collection Of</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="extra">Extra</string>
+    <string name="dealer_categories">Dealer Categories</string>
+    <string name="dealer_distribuor">Dealer/Distribuor</string>
+    <string name="firm_name">Firm Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="city_town">City/Town</string>
+    <string name="approved">Approved</string>
+    <string name="dealer_name">Dealer Name:</string>
+    <string name="address">Address</string>
+    <string name="gst_number">Gst Number</string>
+    <string name="dealer_aadhar">Dealer Aadhar</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="total_hours">Total Hours</string>
+    <string name="activity">Activity</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="stop_trip">Stop Trip</string>
+    <string name="start_tracking">Start Tracking</string>
+    <string name="stop_tracking">Stop Tracking</string>
+</resources>

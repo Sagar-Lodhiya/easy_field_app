@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_image"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginTop="@dimen/_70sdp"
+            android:id="@+id/iv_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            app:srcCompat="@drawable/logo" />
+
+
+    </RelativeLayout>
+
+
+
+    
+    <RelativeLayout
+        android:layout_marginTop="-220dp"
+        android:layout_below="@+id/rlTop"
+        android:background="@drawable/rounded_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+
+                app:fontFamily="@font/poppins_extrabold"
+                android:textColor="#72C145"
+                android:textFontWeight="800"
+                android:textSize="@dimen/_25sdp"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+
+                android:alpha="0.7"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/poppins_medium"
+                android:text="@string/welcome_msg"
+                android:textColor="@color/black"
+
+                android:textFontWeight="500"
+                android:textSize="@dimen/_12sdp"/>
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_marginTop="@dimen/_10sdp"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:hintTextColor="@color/black"
+                    android:hint="@string/str_mobile_number">
+
+                    <!--this is the actual edit text which takes the input-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_mobile_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:background="@android:color/transparent"
+                        android:maxLength="10"
+
+                        android:textFontWeight="500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:inputType="phone"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:textFontWeight="500"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_14sdp"
+                    android:background="@drawable/rounded_button_dashboard"
+                    android:text="@string/str_login" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            >
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_privacy_policy"
+                android:textColor="@color/green"
+                app:fontFamily="@font/bold"
+                android:textFontWeight="500"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_app_version"
+                style="@style/TextStyleBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:alpha="0.8"
+                app:fontFamily="@font/poppins_medium"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_privacy_policy"
+                tools:text="Version 1.0" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/green"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

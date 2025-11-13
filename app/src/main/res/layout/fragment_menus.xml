@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    >
+
+
+    <RelativeLayout
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:id="@+id/rlTop"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/menu"
+            app:fontFamily="@font/bold"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/_15sdp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_line"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llContent"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.card.MaterialCardView
+
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llVisit"
+                        android:gravity="center"
+
+                        android:paddingTop="@dimen/_10sdp"
+
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_menu_visit"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/visit"
+                            app:fontFamily="@font/inter_bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_10sdp"/>
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llParty"
+                        android:gravity="center"
+
+                        android:paddingTop="@dimen/_10sdp"
+
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_menu_party"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/party"
+                            app:fontFamily="@font/inter_bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_10sdp"/>
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llPayment"
+                        android:gravity="center"
+
+                        android:paddingTop="@dimen/_10sdp"
+
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_menu_payment"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/payment"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:fontFamily="@font/inter_bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_10sdp"/>
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stats"
+                app:fontFamily="@font/bold"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/_18sdp"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llAllexpense"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@drawable/ic_home_expense"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expense"
+                                app:fontFamily="@font/bold"
+                                android:alpha="0.8"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_10sdp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txtExpenses"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                app:fontFamily="@font/bold"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_28sdp"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rs"
+                                app:fontFamily="@font/bold"
+                                android:alpha="0.8"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_14sdp"/>
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llTotalVisit"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@drawable/ic_home_visit"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/total_visit"
+                                android:alpha="0.8"
+                                app:fontFamily="@font/bold"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_10sdp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txtVisit"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                app:fontFamily="@font/bold"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_28sdp"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llTotalPayment"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@drawable/ic_menu_totalpayment"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Payment"
+                                app:fontFamily="@font/bold"
+                                android:alpha="0.8"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_10sdp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txtPayment"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                app:fontFamily="@font/bold"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_28sdp"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rs"
+                                app:fontFamily="@font/bold"
+                                android:alpha="0.8"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_14sdp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llTotalParties"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@drawable/ic_menu_total_party"/>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Parties"
+                                android:alpha="0.8"
+                                app:fontFamily="@font/bold"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_10sdp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txtParty"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:fontFamily="@font/bold"
+                                android:textColor="@color/header_color"
+                                android:textSize="@dimen/_28sdp"/>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+</LinearLayout>

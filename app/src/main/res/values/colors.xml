@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#5EA138</color>
+    <color name="green_dark">#72C145</color>
+
+    <color name="header_color">#262626</color>
+    <color name="menu_text_color">#404040</color>
+
+
+    <color name="grey">#34CCCCCC</color>
+    <color name="red">#D32F2F</color>
+    <color name="dark_green">#38C471</color>
+    <color name="dark_grey">#9C9C9C</color>
+    <color name="status_bar">#FBFBFB</color>
+    <color name="bordercolor">#EAEAEA</color>
+    <color name="hinttextcolor">#8F8F8F</color>
+    <color name="grey_color">#F6F6F6</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#EAEAEA</color>
+    <color name="view_line">#E1E2E4</color>
+    <color name="background">#F6F7F9</color>
+    <color name="text_color_light">#5B6157</color>
+</resources>

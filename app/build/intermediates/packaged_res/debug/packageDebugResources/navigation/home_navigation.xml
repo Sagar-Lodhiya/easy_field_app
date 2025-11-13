@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        tools:layout="@layout/fragment_dashboard"
+        android:id="@+id/dashboardFragment"
+        android:name="com.easyfield.dashboard.fragments.DashboardFragment"
+        android:label="DashboardFragment" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_punchInFragment"
+            app:destination="@id/punchInFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_expenseAllFragment"
+            app:destination="@id/expenseAllFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_visitFragment"
+            app:destination="@id/visitFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_notification"
+        android:id="@+id/notificationFragment"
+        android:name="com.easyfield.notification.fragments.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        tools:layout="@layout/fragment_menus"
+        android:id="@+id/menusFragment"
+        android:name="com.easyfield.menu.fragments.MenusFragment"
+        android:label="MenusFragment" >
+        <action
+            android:id="@+id/action_menusFragment_to_expenseAllFragment"
+            app:destination="@id/expenseAllFragment" />
+        <action
+            android:id="@+id/action_menusFragment_to_visitFragment"
+            app:destination="@id/visitFragment" />
+        <action
+            android:id="@+id/action_menusFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_menusFragment_to_partyFragment"
+            app:destination="@id/partyFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_profile"
+        android:id="@+id/profileFragment"
+        android:name="com.easyfield.profile.Fragments.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_cmsFragment"
+            app:destination="@id/cmsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_cms"
+        android:id="@+id/cmsFragment"
+        android:name="com.easyfield.profile.Fragments.CmsFragment"
+        android:label="CmsFragment" />
+    <fragment
+        tools:layout="@layout/fragment_edit_profile"
+        android:id="@+id/editProfileFragment"
+        android:name="com.easyfield.profile.Fragments.EditProfileFragment"
+        android:label="EditProfileFragment" />
+    <fragment
+        tools:layout="@layout/fragment_expenselist"
+        android:id="@+id/expenseFragment"
+        android:name="com.easyfield.expense.fragments.ExpenseFragment"
+        android:label="ExpenseFragment" >
+        <action
+            android:id="@+id/action_expenseFragment_to_addExpenseFragment"
+            app:destination="@id/addExpenseFragment" />
+        <action
+            android:id="@+id/action_expenseFragment_to_expenseDetailFragment"
+            app:destination="@id/expenseDetailFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_add_expense"
+        android:id="@+id/addExpenseFragment"
+        android:name="com.easyfield.expense.fragments.AddExpenseFragment"
+        android:label="AddExpenseFragment" />
+    <fragment
+        tools:layout="@layout/fragment_punch_in"
+        android:id="@+id/punchInFragment"
+        android:name="com.easyfield.punchin.fragments.PunchInFragment"
+        android:label="PunchInFragment" />
+    <fragment
+        tools:layout="@layout/fragment_attendancelist"
+        android:id="@+id/attendanceFragment"
+        android:name="com.easyfield.attendance.fragments.AttendanceFragment"
+        android:label="AttendanceFragment" >
+        <action
+            android:id="@+id/action_attendanceFragment_to_leaveFragment"
+            app:destination="@id/leaveFragment" />
+        <action
+            android:id="@+id/action_attendanceFragment_to_addLeaveFragment"
+            app:destination="@id/addLeaveFragment" />
+        <action
+            android:id="@+id/action_attendanceFragment_to_attendanceViewFragment"
+            app:destination="@id/attendanceViewFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_leavelist"
+        android:id="@+id/leaveFragment"
+        android:name="com.easyfield.attendance.fragments.LeaveFragment"
+        android:label="LeaveFragment" >
+        <action
+            android:id="@+id/action_leaveFragment_to_addLeaveFragment"
+            app:destination="@id/addLeaveFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_add_leave"
+        android:id="@+id/addLeaveFragment"
+        android:name="com.easyfield.attendance.fragments.AddLeaveFragment"
+        android:label="AddLeaveFragment" />
+    <fragment
+        tools:layout="@layout/fragment_allexpenselist"
+        android:id="@+id/expenseAllFragment"
+        android:name="com.easyfield.expense.fragments.ExpenseAllFragment"
+        android:label="ExpenseAllFragment" >
+        <action
+            android:id="@+id/action_expenseAllFragment_to_addExpenseFragment"
+            app:destination="@id/addExpenseFragment" />
+        <action
+            android:id="@+id/action_expenseAllFragment_to_expenseDetailFragment"
+            app:destination="@id/expenseDetailFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_visit"
+        android:id="@+id/visitFragment"
+        android:name="com.easyfield.visit.fragments.VisitFragment"
+        android:label="VisitFragment" >
+        <action
+            android:id="@+id/action_visitFragment_to_addVisitFragment"
+            app:destination="@id/addVisitFragment" />
+        <action
+            android:id="@+id/action_visitFragment_to_visitDetailFragment"
+            app:destination="@id/visitDetailFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_add_visit"
+        android:id="@+id/addVisitFragment"
+        android:name="com.easyfield.visit.fragments.AddVisitFragment"
+        android:label="AddVisitFragment" />
+    <fragment
+        tools:layout="@layout/fragment_visit"
+        android:id="@+id/paymentFragment"
+        android:name="com.easyfield.payment.fragments.PaymentFragment"
+        android:label="PaymentFragment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_addPaymentFragment"
+            app:destination="@id/addPaymentFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_paymentDetailFragment"
+            app:destination="@id/paymentDetailFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_add_payment"
+        android:id="@+id/addPaymentFragment"
+        android:name="com.easyfield.payment.fragments.AddPaymentFragment"
+        android:label="AddPaymentFragment" />
+    <fragment
+        tools:layout="@layout/fragment_visit"
+        android:id="@+id/partyFragment"
+        android:name="com.easyfield.party.fragments.PartyFragment"
+        android:label="PartyFragment" >
+        <action
+            android:id="@+id/action_partyFragment_to_addPartyFragment"
+            app:destination="@id/addPartyFragment" />
+        <action
+            android:id="@+id/action_partyFragment_to_partyDetailFragment"
+            app:destination="@id/partyDetailFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_add_party"
+        android:id="@+id/addPartyFragment"
+        android:name="com.easyfield.party.fragments.AddPartyFragment"
+        android:label="AddPartyFragment" />
+    <fragment
+        tools:layout="@layout/fragment_view_visit"
+        android:id="@+id/visitDetailFragment"
+        android:name="com.easyfield.visit.fragments.VisitDetailFragment"
+        android:label="VisitDetailFragment" />
+    <fragment
+        tools:layout="@layout/fragment_view_party"
+        android:id="@+id/partyDetailFragment"
+        android:name="com.easyfield.party.fragments.PartyDetailFragment"
+        android:label="PartyDetailFragment" />
+    <fragment
+        tools:layout="@layout/fragment_view_payment"
+        android:id="@+id/paymentDetailFragment"
+        android:name="com.easyfield.payment.fragments.PaymentDetailFragment"
+        android:label="PaymentDetailFragment" />
+    <fragment
+        tools:layout="@layout/fragment_view_expense"
+        android:id="@+id/expenseDetailFragment"
+        android:name="com.easyfield.expense.fragments.ExpenseDetailFragment"
+        android:label="ExpenseDetailFragment" />
+    <fragment
+        tools:layout="@layout/fragment_view_attendance"
+        android:id="@+id/attendanceViewFragment"
+        android:name="com.easyfield.attendance.fragments.AttendanceViewFragment"
+        android:label="AttendanceViewFragment" />
+</navigation>

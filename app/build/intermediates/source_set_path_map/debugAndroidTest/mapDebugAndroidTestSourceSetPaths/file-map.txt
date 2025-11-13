@@ -1,0 +1,6 @@
+com.easyfield.test.app-tracing-1.2.0-0 C:\Users\umang\.gradle\caches\8.9\transforms\42343861ff97e72109a1779c571c6909\transformed\tracing-1.2.0\res
+com.easyfield.test.app-core-1.6.1-1 C:\Users\umang\.gradle\caches\8.9\transforms\f36483d8ab7306c001649c4c794ba293\transformed\core-1.6.1\res
+com.easyfield.test.app-androidTest-2 C:\Users\umang\Desktop\MP\easyfield\app\build\generated\res\resValues\androidTest\debug
+com.easyfield.test.app-mergeDebugAndroidTestResources-3 C:\Users\umang\Desktop\MP\easyfield\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.easyfield.test.app-mergeDebugAndroidTestResources-4 C:\Users\umang\Desktop\MP\easyfield\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.easyfield.test.app-debugAndroidTest-5 C:\Users\umang\Desktop\MP\easyfield\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_layout"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+
+    <RelativeLayout
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:id="@+id/rlTop"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_notification"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/home"
+            app:fontFamily="@font/bold"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/_15sdp"/>
+
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile_menu"
+            app:tint="@color/green" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/viewtop"
+        android:layout_below="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_line"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/viewtop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtUserName"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hardik , Good Morning"
+                    app:fontFamily="@font/bold"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/_18sdp"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_below="@+id/txtUserName"
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9 Jan , 2025"
+                    android:alpha="0.6"
+                    app:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/_12sdp"/>
+
+
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivPhoto"
+                    android:padding="5dp"
+                    app:shapeAppearance="@style/circleImageView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    app:strokeColor="@color/green"
+                    app:strokeWidth="2dp"
+                    android:src="@drawable/profile"/>
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llPunchInOut"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/rounded_button_white"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_punch_in"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/punch_in"
+                            app:fontFamily="@font/bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+
+                        android:id="@+id/txtPunchIn"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--:--"
+                        app:fontFamily="@font/bold"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/_20sdp"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@drawable/rounded_button_white"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_punch_in"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/punch_out"
+                            app:fontFamily="@font/bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtPunchOut"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--:--"
+                        app:fontFamily="@font/bold"
+                        android:textColor="@color/header_color"
+                        android:textSize="@dimen/_20sdp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPunchIn"
+                android:tag="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textFontWeight="500"
+                android:textAllCaps="false"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/rounded_button_dashboard"
+                android:text="@string/punch_in" />
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/analytics"
+                app:fontFamily="@font/bold"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/_18sdp"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/llExpense"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/rounded_button_white"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_home_expense"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtPendingExpenseTitle"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pending_expense"
+                            app:fontFamily="@font/bold"
+                            android:alpha="0.8"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:id="@+id/txtPendingExpense"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="32"
+                            app:fontFamily="@font/bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_28sdp"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rs"
+                            app:fontFamily="@font/bold"
+                            android:alpha="0.8"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_14sdp"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llVisit"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@drawable/rounded_button_white"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_home_visit"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtTodayVisitTitle"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/today_visit"
+                            android:alpha="0.8"
+                            app:fontFamily="@font/bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtTodayVisit"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            app:fontFamily="@font/bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_28sdp"/>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/llKmTravelled"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/rounded_button_white"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_home_travel"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtTravelKMTravel"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kilometer_travelled"
+                            app:fontFamily="@font/bold"
+                            android:alpha="0.8"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtTravelKM"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="32"
+                            app:fontFamily="@font/bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_28sdp"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/km"
+                            app:fontFamily="@font/bold"
+                            android:alpha="0.8"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_14sdp"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llWorkingDays"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/rounded_button_white"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_home_workingday"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtWorkingDaysTitle"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/working_days"
+                            android:alpha="0.8"
+                            app:fontFamily="@font/bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtWorkingDays"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25"
+                            app:fontFamily="@font/bold"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_28sdp"/>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/days"
+                            app:fontFamily="@font/bold"
+                            android:alpha="0.8"
+                            android:textColor="@color/header_color"
+                            android:textSize="@dimen/_14sdp"/>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+    <LinearLayout
+
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:id="@+id/llBottom"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+
+        <LinearLayout
+            android:tag="1"
+            android:id="@+id/llHome"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_selected_menu"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/home"
+                android:visibility="visible"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/green"
+                app:fontFamily="@font/poppins_medium"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="0"
+            android:id="@+id/llMenu"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_menus"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/menu"
+                android:visibility="visible"
+
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/menu_text_color"
+                app:fontFamily="@font/poppins_medium"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="0"
+            android:id="@+id/llExpenses"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expense_menu"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/expense"
+                android:visibility="visible"
+
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/menu_text_color"
+                app:fontFamily="@font/poppins_medium"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:tag="0"
+            android:id="@+id/llAttedance"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_attendance_menu"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/attendance"
+                android:visibility="visible"
+
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/menu_text_color"
+                app:fontFamily="@font/poppins_medium"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

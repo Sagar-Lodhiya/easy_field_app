@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_home"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        android:layout_above="@+id/llBottom"
+        app:navGraph="@navigation/home_navigation" />
+
+    <LinearLayout
+
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:id="@+id/llBottom"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+
+        <LinearLayout
+            android:tag="1"
+            android:id="@+id/llHome"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_selected_menu"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/home"
+                android:visibility="visible"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/green"
+                app:fontFamily="@font/poppins_medium"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="0"
+            android:id="@+id/llMenu"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_menus"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/menu"
+                android:visibility="visible"
+
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/menu_text_color"
+                app:fontFamily="@font/poppins_medium"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:tag="0"
+            android:id="@+id/llExpenses"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expense_menu"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/expense"
+                android:visibility="visible"
+
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/menu_text_color"
+                app:fontFamily="@font/poppins_medium"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:tag="0"
+            android:id="@+id/llAttedance"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_attendance_menu"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/attendance"
+                android:visibility="visible"
+
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/menu_text_color"
+                app:fontFamily="@font/poppins_medium"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+
+<!--        android:background="@color/white"-->
+<!--        android:id="@+id/bottomNavMenu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        app:labelVisibilityMode="labeled"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:menu="@menu/botom_nav_menu"-->
+<!--        app:itemTextColor="@color/black"-->
+<!--        />-->
+</RelativeLayout>

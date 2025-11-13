@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_below="@+id/rlMonthYear"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/rounded_button_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/ivPunch"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/ic_demo"/>
+
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtPunchInTime"
+                    android:layout_centerVertical="true"
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08:00 PM"
+                    app:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_alignParentEnd="true"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:background="@drawable/rounded_button_status"
+                    android:id="@+id/btnStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_10sdp"
+
+
+                    android:text="Punch-In" />
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:alpha="0.6"
+                app:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/_10sdp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtPunchInAddress"
+                android:layout_centerVertical="true"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address Comes Here"
+                app:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

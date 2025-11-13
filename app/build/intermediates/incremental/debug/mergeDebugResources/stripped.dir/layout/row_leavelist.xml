@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/rounded_button_white"
+    android:padding="8dp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:gravity="center_vertical">
+
+
+
+    <!-- Check-in & Check-out Information -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_toStartOf="@+id/btnStatus"
+            android:layout_marginStart="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtLeaveType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casual Leave"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From :"
+                    android:alpha="0.6"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To :"
+                    android:alpha="0.6"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:id="@+id/txtToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtReason"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason :"
+                android:alpha="0.6"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black" />
+
+
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnStatus"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+
+
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+
+
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_10sdp"
+            android:text="Applied" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

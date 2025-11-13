@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    >
+
+
+    <RelativeLayout
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:id="@+id/rlTop"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivBack"
+
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"/>
+
+
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/profile"
+            app:fontFamily="@font/bold"
+            android:textColor="@color/header_color"
+            android:textSize="@dimen/_15sdp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_line"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:padding="5dp"
+                    app:shapeAppearance="@style/circleImageView"
+                    app:srcCompat="@drawable/ic_profile"
+                    app:strokeColor="@color/green"
+                    app:strokeWidth="2dp" />
+
+
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/txtUserName"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vishal"
+                    app:fontFamily="@font/bold"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/_18sdp"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/txtMobileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9737890176"
+                    android:alpha="0.6"
+                    app:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/_12sdp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textFontWeight="500"
+                android:textAllCaps="false"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/rounded_button_dashboard"
+                android:text="@string/edit_profile" />
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/analytics"
+                app:fontFamily="@font/bold"
+                android:textColor="@color/header_color"
+                android:textSize="@dimen/_18sdp"/>
+
+            <RelativeLayout
+                android:id="@+id/rlTerms"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ivNotification"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_terms"/>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivNotification"
+                    android:layout_toStartOf="@+id/ivDelete"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/term_amp_conditions"
+                    app:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/_12sdp"/>
+
+
+
+
+                <ImageView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ivDelete"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlPrivacyPolicy"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ivNotifications"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_privacypolicy"/>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivNotifications"
+                    android:layout_toStartOf="@+id/ivDeletes"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy_policy"
+                    app:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/_12sdp"/>
+
+
+
+
+                <ImageView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ivDeletes"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLogout"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ivNotificationss"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_logout"/>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivNotificationss"
+
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log Out"
+                    app:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/header_color"
+                    android:textSize="@dimen/_12sdp"/>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+</LinearLayout>

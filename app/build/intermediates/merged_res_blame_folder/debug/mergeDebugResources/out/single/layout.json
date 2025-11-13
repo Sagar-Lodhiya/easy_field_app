@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_add_leave.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_add_leave.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/activity_help.xml",
+        "source": "com.easyfield.app-main-75:/layout/activity_help.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_cms.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_cms.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/dialog_month_year_picker.xml",
+        "source": "com.easyfield.app-main-75:/layout/dialog_month_year_picker.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_leavelist.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_leavelist.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_visitlist.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_visitlist.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_partylist.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_partylist.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_login.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_login.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_notification.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_notification.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_menus.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_menus.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_view_expense.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_view_expense.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_paymentlist.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_paymentlist.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_attendancelist.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_attendancelist.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_expenselist.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_expenselist.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_add_visit.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_add_visit.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_edit_profile.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_edit_profile.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_add_party.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_add_party.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_visit.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_visit.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_leavelist.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_leavelist.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_allexpenselist.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_allexpenselist.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_view_attendance.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_view_attendance.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_confirmation.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_confirmation.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/activity_home.xml",
+        "source": "com.easyfield.app-main-75:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_expense_list.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_expense_list.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_view_payment.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_view_payment.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_splash.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_punch_in.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_punch_in.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_notification.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_notification.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_add_payment.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_add_payment.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_punch_in.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_punch_in.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_attendancelist.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_attendancelist.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/dialog_duration_picker.xml",
+        "source": "com.easyfield.app-main-75:/layout/dialog_duration_picker.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_view_party.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_view_party.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/row_progress.xml",
+        "source": "com.easyfield.app-main-75:/layout/row_progress.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_add_expense.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_add_expense.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/activity_splash.xml",
+        "source": "com.easyfield.app-main-75:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_view_visit.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_view_visit.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_dashboard.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/dialog_fragment_location_disclosure.xml",
+        "source": "com.easyfield.app-main-75:/layout/dialog_fragment_location_disclosure.xml"
+    },
+    {
+        "merged": "com.easyfield.app-mergeDebugResources-72:/layout/fragment_profile.xml",
+        "source": "com.easyfield.app-main-75:/layout/fragment_profile.xml"
+    }
+]
