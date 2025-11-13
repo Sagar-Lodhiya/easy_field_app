@@ -59,5 +59,5 @@ For educational and research purposes only.
 ### 💬 Feedback & Contact
 
 For any queries or contributions:  
-📧 Email: `sagar.lodhiya@iitj.ac.in`  
+📧 Email: `m25cse017@iitj.ac.in`  
 🌐 Institute: [IIT Jodhpur](https://iitj.ac.in)
